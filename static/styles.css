@@ -1,0 +1,171 @@
+/* Reset and Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212; /* Deep charcoal background */
+  color: #e0e0e0;          /* Light off-white text */
+  line-height: 1.6;
+  background: url('https://4kwallpapers.com/images/walls/thumbs_3t/8324.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Utility Container */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-bottom: 2px solid #bb86fc; /* Accent border */
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: #bb86fc; /* Accent link color */
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffffff;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: rgba(18, 18, 18, 0.6); /* Dark background with 60% opacity */
+  border-radius: 10px; /* Slightly rounded corners for a softer look */
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+}
+
+.btn {
+  background: #bb86fc;  /* Accent background */
+  color: #121212;       /* Contrast text color */
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #9a67ea;
+}
+
+/* Section Styles */
+.section {
+  padding: 60px 20px;
+}
+
+.section h2 {
+  border-bottom: 2px solid #bb86fc;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.section p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+/* Projects Grid */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.project {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border: 2px solid #bb86fc;
+  flex: 1 1 calc(33% - 40px);
+  min-width: 250px;
+  border-radius: 5px;
+}
+
+.project h3 {
+  margin-bottom: 10px;
+}
+
+/* Contact Section */
+.contact a {
+  color: #bb86fc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact a:hover {
+  color: #ffffff;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #1e1e1e;
+  padding: 20px;
+  text-align: center;
+  border-top: 2px solid #bb86fc;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .projects {
+    flex-direction: column;
+  }
+}
