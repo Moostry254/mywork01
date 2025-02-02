@@ -12,8 +12,8 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 templates = Jinja2Templates(directory="templates")
 
 @app.get("/")
-def read_root():
+async def read_root(request: Request):
     """
     The main route that renders the portfolio homepage.
     """
-    return {"message": "Hello, FastAPI is running!"}
+    return templates.TemplateResponse("index.html", {"request": request})
